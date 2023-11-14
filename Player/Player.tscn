@@ -182,5 +182,6 @@ collision_mask = 8
 position = Vector2(-6, 20)
 shape = SubResource("CapsuleShape2D_v3jwc")
 
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="timeout" from="StateMachine/Coyote/Timer" to="StateMachine/Coyote" method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Coin_Collector" to="." method="_on_coin_collector_body_entered"]
